@@ -6,6 +6,7 @@ description = ""
 edition = "2021"
 rust-version = "1.77.2"
 exclude = ["/examples", "/webview-dist", "/webview-src", "/node_modules"]
+repository = "https://github.com/thewh1teagle/tauri-plugin-keepawake"
 links = "tauri-plugin-keepawake"
 
 [dependencies]
