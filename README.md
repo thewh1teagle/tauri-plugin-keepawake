@@ -1,4 +1,10 @@
+# tauri-plugin-keepawake
+
 Tauri plugin for keeping your computer awake
+
+## Features
+
+- Keep system/display awake
 
 | Platform | Supported |
 | -------- | --------- |
@@ -8,9 +14,7 @@ Tauri plugin for keeping your computer awake
 | Android  | x         |
 | iOS      | x         |
 
-## Features
 
-- Keep system/display awake
 
 ## Install
 
