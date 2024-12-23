@@ -51,7 +51,6 @@ First you need to register the core plugin with Tauri:
 fn main() {
     tauri::Builder::default()
         .setup(|app| {
-            #[cfg(desktop)]
             app.handle().plugin(tauri_plugin_keepawake::init())?;
             Ok(())
         })
