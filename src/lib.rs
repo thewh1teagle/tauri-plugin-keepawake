@@ -33,7 +33,7 @@ struct KeepAwakeHandle(pub Mutex<Option<keepawake::KeepAwake>>);
 
 /// Initializes the plugin.
 pub fn init<R: Runtime>() -> TauriPlugin<R> {
-  Builder::new("tauri-plugin-keepawake")
+  Builder::new("keepawake")
     .invoke_handler(tauri::generate_handler![commands::start, commands::stop])
     .setup(|app, api| {
       let tauri_plugin_keepawake = desktop::init(app, api)?;

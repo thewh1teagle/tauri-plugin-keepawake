@@ -13,11 +13,7 @@ export interface KeepAwakeConfig {
 
 
 export async function start(config?: KeepAwakeConfig): Promise<string | null> {
-  return await invoke('plugin:keepawake|start', {
-    payload: {
-      config,
-    },
-  });
+  return await invoke('plugin:keepawake|start', {config});
 }
 
 export async function stop(): Promise<string | null> {

@@ -1,17 +1,18 @@
 <script lang="ts">
   import { invoke } from "@tauri-apps/api/core";
+  import {start, stop} from 'tauri-plugin-keepawake-api'
 
   // import {start, stop} from "tauri-plugin-keepawake-api/dist-js"
 
   let status = "Not Active"
 
   async function startKeepAwake() {
-    await invoke("plugin:tauri-plugin-keepawake|start");
+    await start({display: true, idle: true, sleep: true})
     status = "Active"
   }
 
   async function stopKeepAwake() {
-    await invoke("plugin:tauri-plugin-keepawake|stop");
+    await stop()
     status = "Not Active"
   }
 

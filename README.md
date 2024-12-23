@@ -8,6 +8,10 @@ Tauri plugin for keeping your computer awake
 | Android  | x         |
 | iOS      | x         |
 
+## Features
+
+- Keep system/display awake
+
 ## Install
 
 Install the Core plugin by adding the following to your `Cargo.toml` file:
@@ -55,7 +59,7 @@ fn main() {
 Afterwards all the plugin's APIs are available through the JavaScript guest bindings:
 
 ```javascript
-import { start, stop } from '@tauri-apps/tauri-plugin-keepawake-api'
-start() // Return promise. may fail
-stop() // Return promise
+import { start, stop } from "@tauri-apps/tauri-plugin-keepawake-api";
+start(); // Return promise. may fail
+stop(); // Return promise
 ```

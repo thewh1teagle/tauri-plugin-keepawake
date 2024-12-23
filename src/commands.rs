@@ -7,9 +7,9 @@ use crate::TauriPluginKeepawakeExt;
 #[command]
 pub(crate) async fn start<R: Runtime>(
     app: AppHandle<R>,
-    payload: KeepAwakeRequest,
+    config: Option<KeepAwakeConfig>,
 ) -> Result<()> {
-    app.tauri_plugin_keepawake().start(payload, &app)
+    app.tauri_plugin_keepawake().start(&app, config)
 }
 
 #[command]
