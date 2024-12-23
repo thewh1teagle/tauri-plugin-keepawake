@@ -56,7 +56,6 @@ Afterwards all the plugin's APIs are available through the JavaScript guest bind
 
 ```javascript
 import { start, stop } from '@tauri-apps/tauri-plugin-keepawake-api'
-const matches = await getMatches()
 start() // Return promise. may fail
 stop() // Return promise
 ```
