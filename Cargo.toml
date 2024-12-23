@@ -1,12 +1,14 @@
 [package]
 name = "tauri-plugin-keepawake"
 version = "0.1.0"
-authors = [ "You" ]
-description = ""
+authors = [ "thewh1teagle" ]
 edition = "2021"
 rust-version = "1.77.2"
 exclude = ["/examples", "/webview-dist", "/webview-src", "/node_modules"]
 repository = "https://github.com/thewh1teagle/tauri-plugin-keepawake"
+license = "MIT"
+keywords = ["tauri", "plugin", "keepawake"]
+description = "A Tauri plugin to keep the system awake"
 links = "tauri-plugin-keepawake"
 
 [dependencies]
