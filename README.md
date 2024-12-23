@@ -60,6 +60,6 @@ Afterwards all the plugin's APIs are available through the JavaScript guest bind
 
 ```javascript
 import { start, stop } from "@tauri-apps/tauri-plugin-keepawake-api";
-start(); // Return promise. may fail
+start({display: true, idle: true, sleep: true}); // Return promise. may fail
 stop(); // Return promise
 ```
