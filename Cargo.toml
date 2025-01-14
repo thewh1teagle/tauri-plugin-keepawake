@@ -1,6 +1,6 @@
 [package]
 name = "tauri-plugin-keepawake"
-version = "0.1.0"
+version = "0.1.1"
 authors = [ "thewh1teagle" ]
 edition = "2021"
 rust-version = "1.77.2"
